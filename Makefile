@@ -1,19 +1,15 @@
 CC=gcc
 CFLAGS=-O3 -g
  
-TARGET=test mandel
+TARGET=test
  
 all: $(TARGET)
  
 libppm.so : ppm.c
-	$(CC) $(CFLAGS)  -fpic -shared $^ -o $@
+    $(CC) $(CFLAGS)  -fpic -shared $^ -o $@
  
 test: main.c libppm.so
-	$(CC) $(CFLAGS) $(LDFLAGS) main.c  -lppm -L. -Wl,-rpath=${PWD} -o $@
-
-mandel: mandel.c libppm.so
-	$(CC) $(CFLAGS) $(LDFLAGS) $< -lm -lppm -L. -Wl,-rpath=${PWD} -o $@
+    $(CC) $(CFLAGS) $(LDFLAGS) -lppm -L. main.c -o $@
  
-
 clean:
-	rm -fr $(TARGET) *.so
+    rm -fr $(TARGET) *.so   
