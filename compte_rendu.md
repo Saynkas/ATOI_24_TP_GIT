@@ -1,4 +1,24 @@
 
+Exercice 1
+
+1>>
+
+alizi@Crooked-Monkey MINGW64 ~/Desktop/TP_GIT_IATIC (main)
+$ git config --global user.name "ALI_ZIFOUTI"
+
+alizi@Crooked-Monkey MINGW64 ~/Desktop/TP_GIT_IATIC (main)
+$ git config --global user.email "alizifouti@gmail.com"
+
+
+2>>
+Makefile: Permet de compiler tous les fichiers sources en un executable
+main.c: le code principal
+mandel.c: calcul de fractale de Mandelbrot
+ppm.c & ppm.h: bibliotheques graphiques pour dessiner les fractales  (fonctions, structures)
+
+3>>
+regardez les commentaires dans ppm.h 
+
 
 ex2-2:
 
