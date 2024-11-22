@@ -54,3 +54,9 @@ pour ne pas avoir de difficultés liées aux clefs ssh et pour récupérer les b
 git commit -m "nom du commit" 
 git push -u origin --all => envoyer le travail local de toutes les branches sur le
 dépôt GitHub distant (via la remote "origin")
+
+ex 5: 
+
+Zoom interactif
+Implémentez une fonctionnalité qui permet à l'utilisateur de sélectionner une zone spécifique à zoomer.
+Ajoutez des paramètres (x_min, x_max, y_min, y_max) pour gérer les coordonnées du zoom et l'échelle. on peut capturer ces informations à partir des clics de souris (si une interface graphique est utilisée) ou simplement par de l'entrée utilisateur.
